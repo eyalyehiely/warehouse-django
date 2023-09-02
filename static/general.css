@@ -1,0 +1,27 @@
+.upper{
+    display: flex;
+    flex-direction: row;
+  
+  }
+  #first_title{
+    margin-left: 35vw;
+    color:red;
+   
+   
+  }
+  #img1{
+   
+    width: 40px;
+    height:40px;
+    display:flex;
+  
+    
+  }
+  
+  .img2{
+   width: 40px;
+   height: 40px;
+   display: flex;
+   margin-left: 34vw;
+   
+  }
