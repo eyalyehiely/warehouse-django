@@ -35,4 +35,9 @@ def login(request):
 def add_request(request):
    request1 = {'request':'1'}
    return render(request,'templates/add_request.html',request1)
+
+
+@login_required(login_url="login/")
+def contact_us(request):
+   return render(request,'templates/contact_us.html')
     

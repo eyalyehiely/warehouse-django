@@ -47,3 +47,14 @@ class Request(models.Model):
 #     question = models.CharField(max_length=20)
 #     # item = Item()
 #     quantity = models.IntegerField()
+
+#support
+class Support(models.Model):
+    support_serial_number = models.IntegerField()
+    user = models.ForeignKey(User , on_delete= models.CASCADE)
+    create_at = models.DateTimeField(auto_now_add=True)
+    description = models.TextField()
+    
+    def __str__(self) :
+        return f"serial_number:{self.support_serial_number} User:{self.user} Reason: {self.reason} Create at: {self.create_at}  Description: {self.description} "
+    
